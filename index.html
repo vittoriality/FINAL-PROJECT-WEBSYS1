@@ -1,91 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vittoriality</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vittoriality</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <h1>ꪜittoriality</h1>
+        <p>Your Beauty, Your Reality.</p>
+      </div>
+      <div class="header-right">
+        <div class="contacts">
+          <a href="mailto:vittoriality@gmail.com">Email</a>
+          <a href="https://www.instagram.com/">Instagram</a>
+          <a href="https://www.facebook.com/">Facebook</a>
+        </div>
 
-<body>
+        <div class="cart-icon">
+          <img
+            src="images/white-shopping-cart-icon-on-a-white-isolated-background-representing-online-shopping-and-retail-png.webp"
+            class="cart-img"
+          />
+          <span id="cart-count">0</span>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="hero-text">
+          <p class="small-text">Vittoria's Collection</p>
 
-  <header class="header">
+          <h2>
+            Enhance Your <br />
+            Natural Beauty.
+          </h2>
 
-    <div class="logo">
-      <h1>ꪜittoriality</h1>
-      <p>Your Beauty, Your Reality.</p>
-    </div>
-    <div class="header-right">
-      <div class="contacts">
-        <a href="mailto:vittoriality@gmail.com">Email</a>
-        <a href="https://www.instagram.com/">Instagram</a>
-        <a href="https://www.facebook.com/">Facebook</a>
+          <p class="hero-desc">Makeup made for everyday beauty.</p>
+
+          <button class="hero-btn">Shop Now!</button>
+        </div>
+
+        <div class="hero-image">
+          <img
+            src="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-pink-cloud-illustration-png-image_10211407.png"
+          />
+        </div>
+      </section>
+
+      <div class="top-bar">
+        <input type="text" id="search" placeholder="Search products..." />
       </div>
 
-      <div class="cart-icon">
-        <img src="https://static.vecteezy.com/system/resources/thumbnails/055/774/402/small/white-shopping-cart-icon-on-a-white-isolated-background-representing-online-shopping-and-retail-png.png" class="cart-img">
-    <span id="cart-count">0</span>
-    </div>
+      <div class="content">
+        <section id="products" class="products"></section>
 
-  </header>
-  <main class="main">
-    <div class="top-bar">
-      <input
-        type="text"
-        id="search"
-        placeholder="Search products...">
-    </div>
+        <aside class="cart">
+          <h2>Your Cart</h2>
 
-    <div class="content">
-      <section
-        id="products"
-        class="products"
-      ></section>
-      
-      <aside class="cart">
-        <h2>Your Cart</h2>
-        <p id="empty-msg">Your cart is empty!</p>
+          <p id="empty-msg">Your cart is empty!</p>
 
-        <div id="cart-items"></div>
-        <div class="cart-footer">
-          <h3>Total: ₱<span id="total">0</span></h3>
+          <div id="cart-items"></div>
 
-          <button
-            id="checkout-btn"
-            class="checkout-btn">
-            CHECKOUT
-          </button>
+          <div class="cart-footer">
+            <h3>Total: ₱<span id="total">0</span></h3>
 
-          <button
-            id="clear-cart" class="clear-btn">CLEAR
-          </button>
-        </div>
-      </aside>
-    </div>
-    
-    <section class="hero">
-        <div class="hero-text">
-            <p class="small-text">Vittoria's Collection</p>
-            <h2>Enhance Your <br> Natural Beauty.</h2>
-            <p class="hero-desc">Makeup made for everyday beauty.</p>
-    <button class="hero-btn">Shop Now!</button>
-  </div>
+            <button id="checkout-btn" class="checkout-btn">CHECKOUT</button>
 
-  <div class="hero-image">
-    <img src="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-pink-cloud-illustration-png-image_10211407.png">
-  </div>
-</section>
+            <button id="clear-cart" class="clear-btn">CLEAR</button>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>© 2026 Vittoriality</p>
+      <p>Beauty made with care.</p>
+    </footer>
 
-  </main>
-
-  <footer class="footer">
-    <p>© 2026 Vittoriality</p>
-    <p>Beauty made with care.</p>
-  </footer>
-
-  <script type="module"src="product.js"></script>
-
-</body>
-
+    <script type="module" src="product.js"></script>
+  </body>
 </html>
